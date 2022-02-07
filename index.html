@@ -21,9 +21,10 @@
       </div>
       <p class="p">enter valid email</p>
       <div>
-        <input oninvalid="event.preventDefault()" type="password" onblur="passcheck(this,2)" minlength="6" required/>
+        <input id="xpass" oninvalid="event.preventDefault()" type="password" onblur="passcheck(this,2)" minlength="6" required/>
         <label class="Lanime" for="password">password</label>
       </div>
+      <span onclick="xxx()">xxx</span>
       <p style="display: block;">
         <span class="passcheck">length at least 6</span>
         <span class="passcheck">numbers</span>

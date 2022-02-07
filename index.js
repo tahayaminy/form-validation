@@ -86,3 +86,11 @@ function passcheck(el,child){
     }
     label(el,child);
 }
+function xxx(){
+    var xpass=document.getElementById('xpass');
+    if(xpass.type==="password"){
+        xpass.type="text";
+    }else{
+        xpass.type="password";
+    }
+}
