@@ -21,10 +21,10 @@
       </div>
       <p class="p">enter valid email</p>
       <div>
-        <input id="xpass" oninvalid="event.preventDefault()" type="password" onblur="passcheck(this,2)" minlength="6" required/>
+        <input id="password" oninvalid="event.preventDefault()" type="password" onblur="passcheck(this,2)" minlength="6" required/>
         <label class="Lanime" for="password">password</label>
+        <i class="far fa-eye-slash" style="position: absolute;top: 50%;left: 30px;transform: translate(-50%,-50%);cursor: pointer;" id="eye" onclick="showPass()"></i>
       </div>
-      <span onclick="xxx()">xxx</span>
       <p style="display: block;">
         <span class="passcheck">length at least 6</span>
         <span class="passcheck">numbers</span>
@@ -69,6 +69,10 @@
         <span class="rad check"></span>
       </label>
       <div><input type="color" value="#B85C38" /></div>
+      <div>
+        <input type="search" onblur="searchbox(this,3)"/>
+        <label class="Lanime" for="search">search</label>
+      </div>
       <div><input type="submit" value="button" /></div>
     </form>
   </body>

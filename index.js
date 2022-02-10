@@ -37,6 +37,9 @@ function namecheck(el,child){
     }
     label(el,child);
 }
+function searchbox(el,child){
+    label(el,child);
+}
 function emailcheck(el,child){
     if(!el.checkValidity() && el.value.search(/\./g)== -1){
         p[child].style.display='block';
@@ -86,11 +89,16 @@ function passcheck(el,child){
     }
     label(el,child);
 }
-function xxx(){
-    var xpass=document.getElementById('xpass');
-    if(xpass.type==="password"){
-        xpass.type="text";
+function showPass(){
+    var password=document.getElementById('password');
+    var eye=document.getElementById('eye');
+    if(password.type==="password"){
+        password.type="text";        
+        eye.classList.remove('fa-eye-slash');
+        eye.classList.add('fa-eye');
     }else{
-        xpass.type="password";
+        password.type="password";        
+        eye.classList.add('fa-eye-slash');
+        eye.classList.remove('fa-eye');
     }
 }
