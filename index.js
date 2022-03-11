@@ -102,3 +102,14 @@ function showPass(){
         eye.classList.remove('fa-eye');
     }
 }
+
+var selectId=0;
+function select(el,id,group){
+    var options = group? el.parentElement.parentElement:el.parentElement;
+    var optionList=options.querySelectorAll('span');
+    document.querySelector('.selectedValue').innerText=optionList[id].innerText;
+    optionList[selectId].classList.remove('selected');
+    optionList[id].classList.add('selected');
+    selectId=id;
+    options.parentElement.blur();
+}

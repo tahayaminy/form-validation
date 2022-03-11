@@ -69,6 +69,30 @@
         <span class="rad check"></span>
       </label>
       <div><input type="color" value="#B85C38" /></div>
+      <div class="select" tabindex="0">
+        <span class="selectedValue">ONE</span>
+        <i class="fas fa-angle-down"></i>
+        <div class="options">
+          <div>
+            <b>option group</b>
+            <span onclick="select(this,0,true)" class="selected">one</span>
+            <span onclick="select(this,1,true)">tow</span>
+            <span onclick="select(this,2,true)">three</span>
+          </div>
+          <div>
+            <b>option group</b>
+            <span onclick="select(this,3,true)">four</span>
+            <span onclick="select(this,4,true)">five</span>
+          </div>
+          <span onclick="select(this,5,false)">
+            six
+          </span>
+          <span onclick="select(this,6,false)">
+            seven
+          </span>
+          <span onclick="select(this,7,false)">eight</span>
+        </div>
+      </div>
       <div>
         <input type="search" onblur="searchbox(this,3)"/>
         <label class="Lanime" for="search">search</label>
